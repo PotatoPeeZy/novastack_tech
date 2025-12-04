@@ -32,6 +32,7 @@ export default function Header() {
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
+      <div className="h-px bg-white"></div>
 
       {/* Mobile Sidebar */}
       {open && (
