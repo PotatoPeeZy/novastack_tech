@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer";
 const russoOne = Russo_One({
   variable: "--font-russo-one",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400"],
 });
 
 const geistSans = Geist({
