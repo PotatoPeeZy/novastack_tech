@@ -7,7 +7,7 @@ function Hero_1() {
     window.location.href = "/contact";
   };
   return (
-    <div className="text-black bg-white w-full flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
+    <div className="text-black w-full flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
       <div>
         <div className="text-4xl">It Software Solutions</div>
         <div className="text-lg">Real Time App Development Solutions</div>

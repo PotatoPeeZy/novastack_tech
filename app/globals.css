@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
   --clr-primary: rgb(1, 58, 70);
 }
 
@@ -13,16 +11,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-image: url("/Background.jpg");
+  background-size: cover; /* always fill the screen */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent repeating */
+  background-attachment: fixed; /* optional: nice parallax effect */
   font-family: var(--font-russo-one);
 }
 

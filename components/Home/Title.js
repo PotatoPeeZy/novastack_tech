@@ -2,7 +2,7 @@ import React from "react";
 
 function Title() {
   return (
-    <div className="flex flex-col items-center p-6 bg-white text-black w-full">
+    <div className="flex flex-col items-center p-6 text-black w-full">
       <h1 className="text-4xl font-bold mb-4">
         Welcome to NovaStack Technologies
       </h1>

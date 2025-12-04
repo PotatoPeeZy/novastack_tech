@@ -4,7 +4,7 @@ import React from "react";
 
 function Hero_2() {
   return (
-    <div className="text-black bg-white max-w-screen-xl flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
+    <div className="text-black max-w-screen-xl flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
       <Image
         width={1200}
         height={600}
