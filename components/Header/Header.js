@@ -52,33 +52,39 @@ export default function Header() {
 
       <div className="h-px bg-black"></div>
 
-      {open && (
-        <div className="md:hidden bg-white shadow-lg border-t">
-          <nav className="flex flex-col p-4 space-y-4 text-lg font-medium">
-            <Link
-              href="/"
-              className={linkClasses("/")}
-              onClick={() => setOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className={linkClasses("/about")}
-              onClick={() => setOpen(false)}
-            >
-              About Us
-            </Link>
-            <Link
-              href="/contact"
-              className={linkClasses("/contact")}
-              onClick={() => setOpen(false)}
-            >
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      )}
+      <div
+        className={`md:hidden bg-white shadow-lg border-t overflow-hidden transform transition-all duration-300 ease-in-out
+    ${
+      open
+        ? "max-h-[400px] opacity-100 translate-y-0 pointer-events-auto"
+        : "max-h-0 opacity-0 -translate-y-3 pointer-events-none"
+    }`}
+        aria-hidden={!open}
+      >
+        <nav className="flex flex-col p-4 space-y-4 text-lg font-medium">
+          <Link
+            href="/"
+            className={linkClasses("/")}
+            onClick={() => setOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className={linkClasses("/about")}
+            onClick={() => setOpen(false)}
+          >
+            About Us
+          </Link>
+          <Link
+            href="/contact"
+            className={linkClasses("/contact")}
+            onClick={() => setOpen(false)}
+          >
+            Contact Us
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }
