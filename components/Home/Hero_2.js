@@ -13,7 +13,7 @@ function Hero_2() {
         className="w-[80%] sm:w-[40%]"
       ></Image>
 
-      <div className="flex flex-row sm:flex-col">
+      <div className="flex flex-col">
         <div className="text-4xl">Solutions for Every Business Need</div>
         <div className="text-lg">
           Learn why we are the best service providers that you should hire. We
