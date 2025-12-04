@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${russoOne.variable} antialiased`}
       >
         <Header />
+        <div className="[background:transparent] mt-24"></div>
         {children}
       </body>
     </html>
