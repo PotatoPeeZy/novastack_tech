@@ -3,7 +3,7 @@ import React from "react";
 
 function FooterSec3() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-3">
       <div className="text-lg text-[color:var(--clr-primary)]">Contact</div>
       <div className="text-sm">
         Phone:{" "}

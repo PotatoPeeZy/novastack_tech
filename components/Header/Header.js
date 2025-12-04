@@ -25,7 +25,7 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/logo.png" alt="Logo" width={32} height={32} priority />
           <span className="text-2xl font-bold tracking-wide text-gray-700">
-            NovaStack Technologies
+            {process.env.NEXT_PUBLIC_WEB_NAME}
           </span>
         </Link>
 

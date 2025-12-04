@@ -9,8 +9,7 @@ function FooterSec1() {
       <Image src="/logo.png" alt="Logo" width={48} height={48} />
       <div className="text-[var(--clr-primary)] text-2xl">NovaStack</div>
       <div className="font-extralight text-justify text-sm mt-2">
-        NovaStack Technology is a software firm with the main services and
-        development department in Khulna, Bangladesh.
+        {process.env.NEXT_PUBLIC_DESCRIPTION}
       </div>
 
       {/* Social Icons */}
