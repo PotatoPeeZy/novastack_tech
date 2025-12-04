@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
-function Services() {
+function Hero_1() {
   const handleClick = () => {
     window.location.href = "/contact";
   };
@@ -31,4 +31,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Hero_1;
