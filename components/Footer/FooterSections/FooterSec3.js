@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,19 +7,31 @@ function FooterSec3() {
     <div className="flex flex-col gap-3">
       <div className="text-lg text-[color:var(--clr-primary)]">Contact</div>
       <div className="text-sm">
-        Phone:{" "}
         <Link
           href="tel:01792438135"
-          className="hover:text-[var(--clr-primary)] transition"
+          className="hover:text-[var(--clr-primary)] transition flex flex-row gap-1"
         >
+          {" "}
+          <Image
+            width={16}
+            height={16}
+            src="/icons/phone.gif"
+            alt="Call:"
+          ></Image>
           +880-1792-438135
         </Link>
       </div>
       <div className="text-sm">
         <Link
-          className="hover:text-[var(--clr-primary)] transition"
+          className="hover:text-[var(--clr-primary)] transition flex flex-row gap-1"
           href="mailto:"
         >
+          <Image
+            width={16}
+            height={16}
+            src="/icons/mail.gif"
+            alt="Call:"
+          ></Image>
           contact@novastack.tech
         </Link>
       </div>
