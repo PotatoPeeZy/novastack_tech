@@ -11,8 +11,8 @@ export default function Header() {
   const linkClasses = (path) =>
     `transition ${
       pathname === path
-        ? "text-[rgb(1,58,70)] font-semibold"
-        : "hover:text-[rgb(1,58,70)]"
+        ? "text-[rgb(1,58,70)] font-semibold "
+        : "hover:text-[rgb(1,58,70)] "
     }`;
 
   return (
@@ -20,14 +20,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center">
-            <span className="text-sm font-bold">LOGO</span>
+            <span className="text-[x-large] font-bold">NV</span>
           </div>
           <span className="text-2xl font-bold tracking-wide text-gray-700">
             NovaStack Technologies
           </span>
         </Link>
 
-        <nav className="hidden md:flex space-x-8 text-lg font-medium">
+        <nav className="hidden md:flex space-x-8 text-lg font-medium ">
           <Link href="/" className={linkClasses("/")}>
             Home
           </Link>
