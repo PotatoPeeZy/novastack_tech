@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Minibar from "./Minibar";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -17,6 +18,8 @@ export default function Header() {
 
   return (
     <header className="w-full shadow-md fixed top-0 left-0 z-50 bg-white text-black">
+      <Minibar />
+      <div className="h-px bg-[gray]"></div>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center">
