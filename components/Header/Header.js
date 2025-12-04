@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Minibar from "./Minibar";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -12,8 +13,8 @@ export default function Header() {
   const linkClasses = (path) =>
     `transition ${
       pathname === path
-        ? "text-[rgb(1,58,70)] font-semibold "
-        : "hover:text-[rgb(1,58,70)] "
+        ? "text-[var(--clr-primary)] font-semibold "
+        : "hover:text-[var(--clr-primary)] "
     }`;
 
   return (
@@ -22,9 +23,7 @@ export default function Header() {
       <div className="h-px bg-[gray]"></div>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gray-300 rounded-md flex items-center justify-center">
-            <span className="text-[x-large] font-bold">NV</span>
-          </div>
+          <Image src="/logo.png" alt="Logo" width={32} height={32} priority />
           <span className="text-2xl font-bold tracking-wide text-gray-700">
             NovaStack Technologies
           </span>
