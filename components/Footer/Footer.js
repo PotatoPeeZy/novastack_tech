@@ -1,5 +1,6 @@
 import React from "react";
-import FooterSec1 from "./FooterSec1";
+import FooterSec1 from "./FooterSections/FooterSec1";
+import FooterSec2 from "./FooterSections/FooterSec2";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +14,9 @@ const Footer = () => {
         <div className="max-w-[20%]">
           <FooterSec1 />
         </div>
-        <div>sec1</div>
+        <div className="max-w-[20%]">
+          <FooterSec2 />
+        </div>
         <div>sec1</div>
         <div>sec1</div>
       </div>
