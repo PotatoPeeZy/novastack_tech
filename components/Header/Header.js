@@ -11,8 +11,8 @@ export default function Header() {
   const linkClasses = (path) =>
     `transition ${
       pathname === path
-        ? "text-indigo-600 font-semibold underline"
-        : "hover:text-indigo-600"
+        ? "text-[rgb(1,58,70)] font-semibold"
+        : "hover:text-[rgb(1,58,70)]"
     }`;
 
   return (
