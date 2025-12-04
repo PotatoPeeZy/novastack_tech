@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header/Header";
+import Header from "@/components/Header/Header";
 import { Russo_One } from "next/font/google";
+import Footer from "@/components/Footer/Footer";
 
 const russoOne = Russo_One({
   variable: "--font-russo-one",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         <div className="[background:transparent] mt-24"></div>
         {children}
+        <Footer />
       </body>
     </html>
   );
