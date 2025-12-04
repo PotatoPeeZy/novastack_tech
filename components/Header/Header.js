@@ -42,7 +42,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="md:hidden p-2 rounded-lg border hover:bg-gray-100 transition"
+          className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
           onClick={() => setOpen(!open)}
         >
           {open ? <X size={26} /> : <Menu size={26} />}
