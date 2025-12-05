@@ -1,0 +1,40 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "title": "CTO",
+      "company": "TechStart Inc.",
+      "content": "NovaStack transformed our infrastructure. Their cloud solutions reduced our operational costs by 40% within the first year.",
+      "rating": 5,
+      "date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "title": "Operations Manager",
+      "company": "Digital Ventures",
+      "content": "Exceptional support and expertise. The team guided us through a complex migration seamlessly.",
+      "rating": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": 3,
+      "name": "Emma Rodriguez",
+      "title": "Project Lead",
+      "company": "CloudFirst Solutions",
+      "content": "Professional, reliable, and innovative. NovaStack delivered beyond our expectations.",
+      "rating": 4,
+      "date": "2024-02-05"
+    },
+    {
+      "id": 4,
+      "name": "David Thompson",
+      "title": "CEO",
+      "company": "Enterprise Systems Ltd.",
+      "content": "Outstanding technical team. Their consulting services optimized our entire IT stack.",
+      "rating": 5,
+      "date": "2024-02-10"
+    }
+  ]
+}

@@ -4,13 +4,13 @@ import React from "react";
 
 function Hero_2() {
   return (
-    <div className="text-black max-w-screen-xl flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
+    <div className="text-black max-w-7xl flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
       <Image
         width={1200}
         height={600}
         src="/Home/Hero_2.png"
         alt="Hero"
-        className="w-[80%] sm:w-[40%]"
+        className="w-[80%] sm:w-[30%]"
       ></Image>
 
       <div className="flex flex-col">
