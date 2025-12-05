@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Web Development",
+      "description": "Full-stack web application development using modern frameworks and technologies",
+      "icon": "globe"
+    },
+    {
+      "id": 2,
+      "name": "Mobile Development",
+      "description": "Native and cross-platform mobile app development for iOS and Android",
+      "icon": "smartphone"
+    },
+    {
+      "id": 3,
+      "name": "Cloud Services",
+      "description": "Cloud infrastructure setup, deployment, and management on AWS, Azure, GCP",
+      "icon": "cloud"
+    },
+    {
+      "id": 4,
+      "name": "UI/UX Design",
+      "description": "User interface and user experience design with prototyping and testing",
+      "icon": "palette"
+    },
+    {
+      "id": 5,
+      "name": "DevOps & CI/CD",
+      "description": "Continuous integration, deployment pipelines, and infrastructure automation",
+      "icon": "cog"
+    },
+    {
+      "id": 6,
+      "name": "API Development",
+      "description": "RESTful and GraphQL API design and implementation",
+      "icon": "plug"
+    },
+    {
+      "id": 7,
+      "name": "Database Design",
+      "description": "SQL and NoSQL database architecture, optimization, and management",
+      "icon": "database"
+    }
+  ]
+}
