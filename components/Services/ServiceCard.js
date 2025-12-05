@@ -1,11 +1,23 @@
 "use client";
-import { Globe, Smartphone, Cloud } from "lucide-react";
+import {
+  Globe,
+  Smartphone,
+  Cloud,
+  DatabaseZap,
+  Cog,
+  Plug,
+  Palette,
+} from "lucide-react";
 import React from "react";
 
 const iconMap = {
   globe: Globe,
   smartphone: Smartphone,
   cloud: Cloud,
+  database: DatabaseZap,
+  cog: Cog,
+  plug: Plug,
+  palette: Palette,
 };
 
 export default function ServiceCard({ name, description, icon }) {
