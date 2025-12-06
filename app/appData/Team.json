@@ -1,0 +1,10 @@
+{
+    "team":[
+        { "name": "Sarah Johnson", "role": "CEO", "img": "/placeholder.png" },
+    { "name": "David Kim", "role": "CTO", "img": "/placeholder.png" },
+    { "name": "Emily Carter", "role": "Lead Engineer", "img": "/placeholder.png" },
+    { "name": "Nazmul Hossain", "role": "Frontend Engineer", "img": "/placeholder.png" },
+    { "name": "Shishir Hossain", "role": "MERN Stack Engineer", "img": "/placeholder.png" },
+    { "name": "Hasan Hossain", "role": "UI UX Designer", "img": "/placeholder.png" }
+    ]
+}

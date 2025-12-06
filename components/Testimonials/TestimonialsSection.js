@@ -22,7 +22,6 @@ export default function TestimonialsSection() {
         <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
           What Our Clients Say
         </h2>
-        {/* Use relative layering WITHOUT removing from flow */}
         <div className="max-w-3xl mx-auto relative">
           {testimonials.map((t, i) => (
             <div
@@ -35,12 +34,10 @@ export default function TestimonialsSection() {
               <TestimonialCard t={t} />
             </div>
           ))}
-          {/* This dummy keeps the height stable for responsiveness */}
           <div className="invisible">
             <TestimonialCard t={testimonials[0]} />
           </div>
         </div>
-        {/* Pagination */}
         <div className="flex justify-center mt-6 gap-2">
           {testimonials.map((_, i) => (
             <button

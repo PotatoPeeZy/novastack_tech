@@ -1,16 +1,12 @@
 "use client";
 
+import teamData from "@/app/appData/Team.json";
+
 export default function About() {
-  const team = [
-    { name: "Sarah Johnson", role: "CEO", img: "/placeholder.png" },
-    { name: "David Kim", role: "CTO", img: "/placeholder.png" },
-    { name: "Emily Carter", role: "Lead Engineer", img: "/placeholder.png" },
-  ];
+  const { team } = teamData;
 
   return (
-    <div className="min-h-screen from-slate-50 to-slate-100">
-
-      {/* Hero Section */}
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <section className="py-20 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl font-bold text-gray-900 mb-6">About Us</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -18,27 +14,19 @@ export default function About() {
         </p>
       </section>
 
-      {/* Story Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Our Story
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             NovaStack Technologies began with a mission: to help businesses
-            embrace scalable, secure, and future-ready cloud solutions. Today,
-            our team continues to innovate and build services that empower teams
-            around the globe.
+            embrace scalable, secure, and future-ready cloud solutions...
           </p>
         </div>
       </section>
 
-      {/* Mission & Vision */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Our Mission
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
           <p className="text-lg text-gray-700">
             To deliver high-performance cloud solutions that allow businesses to
             innovate quickly and sustainably.
@@ -46,22 +34,16 @@ export default function About() {
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Our Vision
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
           <p className="text-lg text-gray-700">
-            To become a global leader in cloud transformation by prioritizing
-            reliability, excellence, and forward-thinking innovations.
+            To become a global leader in cloud transformation.
           </p>
         </div>
       </section>
 
-      {/* Values */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Our Values
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">Our Values</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -82,9 +64,7 @@ export default function About() {
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-md text-center"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {value.title}
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
@@ -92,17 +72,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Meet the Team
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">Meet the Team</h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
-            {team.map((member, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gray-200" />
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+            {team.map((member, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-6 rounded-xl shadow-lg text-center"
+              >
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gray-200 overflow-hidden">
+                  <img
+                    src={member.img}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold text-gray-800">
                   {member.name}
                 </h3>
@@ -112,8 +98,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* CTA */}
       <section className="py-20 text-center px-4">
         <a
           href="/contact"
