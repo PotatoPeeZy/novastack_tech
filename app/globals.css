@@ -59,10 +59,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Debug helper: temporarily show the element causing overflow
-   Uncomment while debugging to discover which element overflows */
-/* html.debug-overflow * {
-  outline: 1px dashed rgba(255, 0, 0, 0.15);
-}
- */
