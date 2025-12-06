@@ -19,7 +19,12 @@ body {
   background-attachment: fixed;
   font-family: var(--font-russo-one);
 }
-
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden !important;
+} */
 .icon-hover {
   transition: 0.3s ease;
 }
@@ -28,3 +33,36 @@ body {
   filter: brightness(0) saturate(100%) invert(38%) sepia(92%) saturate(2000%)
     hue-rotate(210deg) brightness(95%) contrast(100%);
 }
+/* ensure consistent box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* keen-slider safety — prevents child from forcing width and avoids tiny overflow */
+.keen-slider {
+  max-width: 100%;
+  width: 100%;
+  overflow: visible; /* the outer wrapper (overflow-hidden) does clipping */
+}
+
+.keen-slider__slide {
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+/* optional: avoid tiny subpixel overflow (round transform rounding issues) */
+#testimonials-wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Debug helper: temporarily show the element causing overflow
+   Uncomment while debugging to discover which element overflows */
+/* html.debug-overflow * {
+  outline: 1px dashed rgba(255, 0, 0, 0.15);
+}
+ */
