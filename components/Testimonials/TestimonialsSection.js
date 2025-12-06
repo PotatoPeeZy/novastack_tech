@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
               key={i}
               onClick={() => setIndex(i)}
               className={`w-3 h-3 rounded-full transition-all ${
-                i === index ? "bg-blue-600 scale-110" : "bg-gray-300"
+                i === index ? "bg-[var(--clr-primary)] scale-110" : "bg-gray-300"
               }`}
             />
           ))}
