@@ -1,33 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Reveal from "../Animations/ScrollReveal/Reveal";
 
 function Hero_2() {
   return (
-    <div className="text-black max-w-7xl flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
-      <Image
-        width={1200}
-        height={600}
-        src="/Home/Hero_2.png"
-        alt="Hero"
-        className="w-[80%] sm:w-[30%]"
-      ></Image>
-
-      <div className="flex flex-col">
-        <div className="text-4xl">Solutions for Every Business Need</div>
-        <div className="text-lg">
-          Learn why we are the best service providers that you should hire. We
-          have various elements that add to an excellent service tailored to
-          your demands.
+    <Reveal>
+      <div className="text-black max-w-7xl flex flex-col sm:flex-row items-center p-6 justify-center gap-6">
+        <Image
+          width={1200}
+          height={600}
+          src="/Home/Hero_2.png"
+          alt="Hero"
+          className="w-[80%] sm:w-[30%]"
+        ></Image>
+        <div className="flex flex-col">
+          <div className="text-4xl">Solutions for Every Business Need</div>
+          <div className="text-lg">
+            Learn why we are the best service providers that you should hire. We
+            have various elements that add to an excellent service tailored to
+            your demands.
+          </div>
+          <Link
+            href="/about"
+            className="bg-[var(--clr-primary)] p-2 text-white mt-4 hover:bg-black transition rounded-md w-max"
+          >
+            Learn More
+          </Link>
         </div>
-        <Link
-          href="/about"
-          className="bg-[var(--clr-primary)] p-2 text-white mt-4 hover:bg-black transition rounded-md w-max"
-        >
-          Learn More
-        </Link>
       </div>
-    </div>
+    </Reveal>
   );
 }
 
